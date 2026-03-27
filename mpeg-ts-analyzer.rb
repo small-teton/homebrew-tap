@@ -5,21 +5,21 @@
 class MpegTsAnalyzer < Formula
   desc "An analyzer for MPEG-2 Transport Stream (ISO/IEC 13818-1)"
   homepage "https://github.com/small-teton/mpeg-ts-analyzer"
-  version "1.3.0"
+  version "1.4.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.3.0/mpeg-ts-analyzer_Darwin_x86_64.tar.gz"
-      sha256 "342e58cc95170b1996ef0c98e3ac0b28fa53799c4d81646c0a4b1a2db7af9be7"
+      url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.4.0/mpeg-ts-analyzer_Darwin_x86_64.tar.gz"
+      sha256 "d5a664092c98c0c33cfab36912fd4b511e0b4c7a3df8c1ef9f6035407f17e791"
 
       def install
         bin.install "mpeg-ts-analyzer"
       end
     end
     on_arm do
-      url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.3.0/mpeg-ts-analyzer_Darwin_arm64.tar.gz"
-      sha256 "987b6b2acc546e42a58d631581d04a718bbb2a4435c4bd5f6808550a3ec00a4c"
+      url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.4.0/mpeg-ts-analyzer_Darwin_arm64.tar.gz"
+      sha256 "8440af0bb9b50bc57db1b41292f54aa721fcaca0e3fd68d25612fdb9d932e2fd"
 
       def install
         bin.install "mpeg-ts-analyzer"
@@ -30,8 +30,8 @@ class MpegTsAnalyzer < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.3.0/mpeg-ts-analyzer_Linux_x86_64.tar.gz"
-        sha256 "37196d450223c618f2d8f856de29c4921130f1a1da51f28679f0170245a66a07"
+        url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.4.0/mpeg-ts-analyzer_Linux_x86_64.tar.gz"
+        sha256 "ba1ad26e9cfb4d80a0c7822ef50913e7ccb988b6163509f29b33525093d0b0c6"
 
         def install
           bin.install "mpeg-ts-analyzer"
@@ -40,8 +40,8 @@ class MpegTsAnalyzer < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.3.0/mpeg-ts-analyzer_Linux_arm64.tar.gz"
-        sha256 "cdc61c6ae0d4da6abefcb512c0e146fab8118a92d828fc1dc5909183de307c09"
+        url "https://github.com/small-teton/mpeg-ts-analyzer/releases/download/v1.4.0/mpeg-ts-analyzer_Linux_arm64.tar.gz"
+        sha256 "167991286627d01b5b53434c63089126fa37befeb7df53b7f3fd0ccab5b5a2c8"
 
         def install
           bin.install "mpeg-ts-analyzer"
